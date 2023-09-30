@@ -45,6 +45,18 @@ Properties
    | :ref:`bool<class_bool>` | wrap_controls | ``true`` (overrides :ref:`Window<class_Window_property_wrap_controls>`) |
    +-------------------------+---------------+-------------------------------------------------------------------------+
 
+.. rst-class:: classref-reftable-group
+
+Theme Properties
+----------------
+
+.. table::
+   :widths: auto
+
+   +---------------------------------+---------------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>` | :ref:`panel<class_Popup_theme_style_panel>` |
+   +---------------------------------+---------------------------------------------+
+
 .. rst-class:: classref-section-separator
 
 ----
@@ -62,9 +74,27 @@ Signals
 
 Emitted when the popup is hidden.
 
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Theme Property Descriptions
+---------------------------
+
+.. _class_Popup_theme_style_panel:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **panel**
+
+Default :ref:`StyleBox<class_StyleBox>` for the **Popup**.
+
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
 .. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

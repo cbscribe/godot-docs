@@ -178,6 +178,8 @@ Scales the layer when using :ref:`follow_viewport_enabled<class_CanvasLayer_prop
 
 Layer index for draw order. Lower values are drawn behind higher values.
 
+\ **Note:** If multiple CanvasLayers have the same layer index, :ref:`CanvasItem<class_CanvasItem>` children of one CanvasLayer are drawn behind the :ref:`CanvasItem<class_CanvasItem>` children of the other CanvasLayer. Which CanvasLayer is drawn in front is non-deterministic.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -324,3 +326,4 @@ Shows any :ref:`CanvasItem<class_CanvasItem>` under this **CanvasLayer**. This i
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

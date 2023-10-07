@@ -832,9 +832,7 @@ void **_frame** **(** **)** |virtual|
 
 :ref:`bool<class_bool>` **_has_named_classes** **(** **)** |virtual| |const|
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+*Deprecated.* This method is not called by the engine.
 
 .. rst-class:: classref-item-separator
 
@@ -1136,3 +1134,4 @@ void **_thread_exit** **(** **)** |virtual|
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

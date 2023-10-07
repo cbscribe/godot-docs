@@ -237,6 +237,8 @@ Changes the currently opened directory to the one passed as an argument. The arg
 
 Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
 
+\ **Note:** The new directory must be within the same scope, e.g. when you had opened a directory inside ``res://``, you can't change it to ``user://`` directory. If you need to open a directory in another access scope, use :ref:`open<class_DirAccess_method_open>` to create a new instance instead.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -625,3 +627,4 @@ Static version of :ref:`rename<class_DirAccess_method_rename>`. Supports only ab
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

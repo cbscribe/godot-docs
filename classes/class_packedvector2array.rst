@@ -19,6 +19,10 @@ Description
 
 An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data tightly, so it saves memory for large array sizes.
 
+.. note::
+
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+
 .. rst-class:: classref-introduction-group
 
 Tutorials
@@ -150,6 +154,12 @@ Constructs a **PackedVector2Array** as a copy of the given **PackedVector2Array*
 :ref:`PackedVector2Array<class_PackedVector2Array>` **PackedVector2Array** **(** :ref:`Array<class_Array>` from **)**
 
 Constructs a new **PackedVector2Array**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+
+\ **Note:** When initializing a **PackedVector2Array** with elements, it must be initialized with an :ref:`Array<class_Array>` of :ref:`Vector2<class_Vector2>` values:
+
+::
+
+    var array = PackedVector2Array([Vector2(12, 34), Vector2(56, 78)])
 
 .. rst-class:: classref-section-separator
 
@@ -453,7 +463,11 @@ Returns ``true`` if contents of the arrays differ.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **operator *** **(** :ref:`Transform2D<class_Transform2D>` right **)**
 
-Transforms (multiplies) all vectors in the array by the :ref:`Transform2D<class_Transform2D>` matrix.
+Returns a new **PackedVector2Array** with all vectors in this array inversely transformed (multiplied) by the given :ref:`Transform2D<class_Transform2D>` transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
+
+\ ``array * transform`` is equivalent to ``transform.inverse() * array``. See :ref:`Transform2D.inverse<class_Transform2D_method_inverse>`.
+
+For transforming by inverse of an affine transformation (e.g. with scaling) ``transform.affine_inverse() * array`` can be used instead. See :ref:`Transform2D.affine_inverse<class_Transform2D_method_affine_inverse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -497,3 +511,4 @@ Returns the :ref:`Vector2<class_Vector2>` at index ``index``. Negative indices c
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

@@ -88,7 +88,7 @@ The default :ref:`CameraAttributes<class_CameraAttributes>` resource to use if n
 
 - :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` **get_direct_space_state** **(** **)**
 
-Direct access to the world's physics 3D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to :ref:`Node._physics_process<class_Node_method__physics_process>` in the main thread.
+Direct access to the world's physics 3D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to :ref:`Node._physics_process<class_Node_private_method__physics_process>` in the main thread.
 
 .. rst-class:: classref-item-separator
 
@@ -178,3 +178,4 @@ The World3D's physics space.
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

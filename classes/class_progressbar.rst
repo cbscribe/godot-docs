@@ -48,8 +48,6 @@ Theme Properties
    +---------------------------------+-----------------------------------------------------------------------------+--------------------------------+
    | :ref:`Color<class_Color>`       | :ref:`font_outline_color<class_ProgressBar_theme_color_font_outline_color>` | ``Color(1, 1, 1, 1)``          |
    +---------------------------------+-----------------------------------------------------------------------------+--------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_shadow_color<class_ProgressBar_theme_color_font_shadow_color>`   | ``Color(0, 0, 0, 1)``          |
-   +---------------------------------+-----------------------------------------------------------------------------+--------------------------------+
    | :ref:`int<class_int>`           | :ref:`outline_size<class_ProgressBar_theme_constant_outline_size>`          | ``0``                          |
    +---------------------------------+-----------------------------------------------------------------------------+--------------------------------+
    | :ref:`Font<class_Font>`         | :ref:`font<class_ProgressBar_theme_font_font>`                              |                                |
@@ -180,18 +178,6 @@ The tint of text outline of the **ProgressBar**.
 
 ----
 
-.. _class_ProgressBar_theme_color_font_shadow_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_shadow_color** = ``Color(0, 0, 0, 1)``
-
-The color of the text's shadow.
-
-.. rst-class:: classref-item-separator
-
-----
-
 .. _class_ProgressBar_theme_constant_outline_size:
 
 .. rst-class:: classref-themeproperty
@@ -256,3 +242,4 @@ The style of the progress (i.e. the part that fills the bar).
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

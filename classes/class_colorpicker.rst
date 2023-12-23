@@ -562,7 +562,7 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **center_slider_grabbers** = ``1``
 
-Overrides the :ref:`HSlider.center_grabber<class_HSlider_theme_constant_center_grabber>` theme property of the sliders.
+Overrides the :ref:`Slider.center_grabber<class_Slider_theme_constant_center_grabber>` theme property of the sliders.
 
 .. rst-class:: classref-item-separator
 
@@ -786,3 +786,4 @@ The icon for rectangular wheel picker shapes.
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

@@ -75,6 +75,8 @@ Theme Properties
    +-----------------------------------+-------------------------------------------------------------------------------------------+--------+
    | :ref:`int<class_int>`             | :ref:`separation<class_SplitContainer_theme_constant_separation>`                         | ``12`` |
    +-----------------------------------+-------------------------------------------------------------------------------------------+--------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber<class_SplitContainer_theme_icon_grabber>`                                   |        |
+   +-----------------------------------+-------------------------------------------------------------------------------------------+--------+
    | :ref:`Texture2D<class_Texture2D>` | :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>`                               |        |
    +-----------------------------------+-------------------------------------------------------------------------------------------+--------+
    | :ref:`Texture2D<class_Texture2D>` | :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>`                               |        |
@@ -273,6 +275,18 @@ The space between sides of the container.
 
 ----
 
+.. _class_SplitContainer_theme_icon_grabber:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **grabber**
+
+The icon used for the grabber drawn in the middle area.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_SplitContainer_theme_icon_h_grabber:
 
 .. rst-class:: classref-themeproperty
@@ -299,3 +313,4 @@ The icon used for the grabber drawn in the middle area when :ref:`vertical<class
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

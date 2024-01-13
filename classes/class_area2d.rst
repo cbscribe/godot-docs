@@ -23,6 +23,8 @@ Description
 
 This node can also locally alter or override physics parameters (gravity, damping) and route audio to custom audio buses.
 
+\ **Note:** Areas and bodies created with :ref:`PhysicsServer2D<class_PhysicsServer2D>` might not interact as expected with **Area2D**\ s, and might not emit signals or track objects correctly.
+
 .. rst-class:: classref-introduction-group
 
 Tutorials
@@ -655,3 +657,4 @@ The ``body`` argument can either be a :ref:`PhysicsBody2D<class_PhysicsBody2D>` 
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

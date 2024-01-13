@@ -399,7 +399,7 @@ Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and
 
 Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
-It can perform smoother interpolation than ``cubic_interpolate()`` by the time values.
+It can perform smoother interpolation than :ref:`cubic_interpolate<class_Vector4_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -692,7 +692,9 @@ Returns ``true`` if the vectors are not equal.
 
 :ref:`Vector4<class_Vector4>` **operator *** **(** :ref:`Projection<class_Projection>` right **)**
 
-Inversely transforms (multiplies) the **Vector4** by the given :ref:`Projection<class_Projection>` matrix.
+Transforms (multiplies) the **Vector4** by the transpose of the given :ref:`Projection<class_Projection>` matrix.
+
+For transforming by inverse of a projection ``projection.inverse() * vector`` can be used instead. See :ref:`Projection.inverse<class_Projection_method_inverse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -928,3 +930,4 @@ Returns the negative value of the **Vector4**. This is the same as writing ``Vec
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

@@ -23,7 +23,7 @@ RandomNumberGenerator is a class for generating pseudo-random numbers. It curren
 
 \ **Note:** The underlying algorithm is an implementation detail and should not be depended upon.
 
-To generate a random float number (within a given range) based on a time-dependant seed:
+To generate a random float number (within a given range) based on a time-dependent seed:
 
 ::
 
@@ -213,7 +213,7 @@ Returns a pseudo-random 32-bit signed integer between ``from`` and ``to`` (inclu
 
 void **randomize** **(** **)**
 
-Setups a time-based seed to for this **RandomNumberGenerator** instance. Unlike the :ref:`@GlobalScope<class_@GlobalScope>` random number generation functions, different **RandomNumberGenerator** instances can use different seeds.
+Sets up a time-based seed for this **RandomNumberGenerator** instance. Unlike the :ref:`@GlobalScope<class_@GlobalScope>` random number generation functions, different **RandomNumberGenerator** instances can use different seeds.
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
@@ -221,3 +221,4 @@ Setups a time-based seed to for this **RandomNumberGenerator** instance. Unlike 
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

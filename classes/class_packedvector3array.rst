@@ -19,6 +19,10 @@ Description
 
 An array specifically designed to hold :ref:`Vector3<class_Vector3>`. Packs data tightly, so it saves memory for large array sizes.
 
+.. note::
+
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+
 .. rst-class:: classref-reftable-group
 
 Constructors
@@ -143,6 +147,12 @@ Constructs a **PackedVector3Array** as a copy of the given **PackedVector3Array*
 :ref:`PackedVector3Array<class_PackedVector3Array>` **PackedVector3Array** **(** :ref:`Array<class_Array>` from **)**
 
 Constructs a new **PackedVector3Array**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+
+\ **Note:** When initializing a **PackedVector3Array** with elements, it must be initialized with an :ref:`Array<class_Array>` of :ref:`Vector3<class_Vector3>` values:
+
+::
+
+    var array = PackedVector3Array([Vector3(12, 34, 56), Vector3(78, 90, 12)])
 
 .. rst-class:: classref-section-separator
 
@@ -325,7 +335,7 @@ Removes an element from the array by index.
 
 :ref:`int<class_int>` **resize** **(** :ref:`int<class_int>` new_size **)**
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size.
+Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize<class_PackedVector3Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +456,11 @@ Returns ``true`` if contents of the arrays differ.
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **operator *** **(** :ref:`Transform3D<class_Transform3D>` right **)**
 
-Transforms (multiplies) all vectors in the array by the :ref:`Transform3D<class_Transform3D>` matrix.
+Returns a new **PackedVector3Array** with all vectors in this array inversely transformed (multiplied) by the given :ref:`Transform3D<class_Transform3D>` transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
+
+\ ``array * transform`` is equivalent to ``transform.inverse() * array``. See :ref:`Transform3D.inverse<class_Transform3D_method_inverse>`.
+
+For transforming by inverse of an affine transformation (e.g. with scaling) ``transform.affine_inverse() * array`` can be used instead. See :ref:`Transform3D.affine_inverse<class_Transform3D_method_affine_inverse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -490,3 +504,4 @@ Returns the :ref:`Vector3<class_Vector3>` at index ``index``. Negative indices c
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

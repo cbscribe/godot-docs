@@ -21,7 +21,7 @@ Abstract base class for input events.
 Description
 -----------
 
-Abstract base class of all types of input events. See :ref:`Node._input<class_Node_method__input>`.
+Abstract base class of all types of input events. See :ref:`Node._input<class_Node_private_method__input>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -291,3 +291,4 @@ Returns a copy of the given input event which has been offset by ``local_ofs`` a
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

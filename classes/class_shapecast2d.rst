@@ -119,7 +119,7 @@ Property Descriptions
 - void **set_collide_with_areas** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_collide_with_areas_enabled** **(** **)**
 
-If ``true``, collision with :ref:`Area2D<class_Area2D>`\ s will be reported.
+If ``true``, collisions with :ref:`Area2D<class_Area2D>`\ s will be reported.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ If ``true``, collision with :ref:`Area2D<class_Area2D>`\ s will be reported.
 - void **set_collide_with_bodies** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_collide_with_bodies_enabled** **(** **)**
 
-If ``true``, collision with :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s will be reported.
+If ``true``, collisions with :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s will be reported.
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ Removes all collision exceptions for this shape.
 
 void **force_shapecast_update** **(** **)**
 
-Updates the collision information for the shape. Use this method to update the collision information immediately instead of waiting for the next ``_physics_process`` call, for example if the shape or its parent has changed state.
+Updates the collision information for the shape immediately, without waiting for the next ``_physics_process`` call. Use this method, for example, when the shape or its parent has changed state.
 
 \ **Note:** ``enabled == true`` is not required for this to work.
 
@@ -488,3 +488,4 @@ Based on ``value``, enables or disables the specified layer in the :ref:`collisi
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

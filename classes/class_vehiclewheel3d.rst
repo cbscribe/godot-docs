@@ -333,7 +333,7 @@ This is the distance in meters the wheel is lowered from its origin point. Don't
 - void **set_roll_influence** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_roll_influence** **(** **)**
 
-This value affects the roll of your vehicle. If set to 1.0 for all wheels, your vehicle will be prone to rolling over, while a value of 0.0 will resist body roll.
+This value affects the roll of your vehicle. If set to 1.0 for all wheels, your vehicle will resist body roll, while a value of 0.0 will be prone to rolling over.
 
 .. rst-class:: classref-section-separator
 
@@ -396,3 +396,4 @@ Returns ``true`` if this wheel is in contact with a surface.
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

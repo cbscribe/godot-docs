@@ -19,7 +19,7 @@ A singleton that manages all :ref:`InputEventAction<class_InputEventAction>`\ s.
 Description
 -----------
 
-Manages all :ref:`InputEventAction<class_InputEventAction>` which can be created/modified from the project settings menu **Project > Project Settings > Input Map** or in code with :ref:`add_action<class_InputMap_method_add_action>` and :ref:`action_add_event<class_InputMap_method_action_add_event>`. See :ref:`Node._input<class_Node_method__input>`.
+Manages all :ref:`InputEventAction<class_InputEventAction>` which can be created/modified from the project settings menu **Project > Project Settings > Input Map** or in code with :ref:`add_action<class_InputMap_method_add_action>` and :ref:`action_add_event<class_InputMap_method_action_add_event>`. See :ref:`Node._input<class_Node_private_method__input>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -237,3 +237,4 @@ Clears all :ref:`InputEventAction<class_InputEventAction>` in the **InputMap** a
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

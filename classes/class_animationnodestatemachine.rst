@@ -146,7 +146,7 @@ Seeking to the beginning is treated as seeking to the beginning of the animation
 
 :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>` **STATE_MACHINE_TYPE_GROUPED** = ``2``
 
-This is a grouped state machine that can be controlled from a parent state machine. It does not work on standalone. There must be a state machine with :ref:`state_machine_type<class_AnimationNodeStateMachine_property_state_machine_type>` of :ref:`STATE_MACHINE_TYPE_ROOT<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_ROOT>` or :ref:`STATE_MACHINE_TYPE_NESTED<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_NESTED>` in the parent or ancestor.
+This is a grouped state machine that can be controlled from a parent state machine. It does not work independently. There must be a state machine with :ref:`state_machine_type<class_AnimationNodeStateMachine_property_state_machine_type>` of :ref:`STATE_MACHINE_TYPE_ROOT<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_ROOT>` or :ref:`STATE_MACHINE_TYPE_NESTED<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_NESTED>` in the parent or ancestor.
 
 .. rst-class:: classref-section-separator
 
@@ -413,9 +413,7 @@ Renames the given animation node.
 
 void **replace_node** **(** :ref:`StringName<class_StringName>` name, :ref:`AnimationNode<class_AnimationNode>` node **)**
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+Replaces the given animation node with a new animation node.
 
 .. rst-class:: classref-item-separator
 
@@ -447,3 +445,4 @@ Sets the animation node's coordinates. Used for display in the editor.
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

@@ -451,7 +451,9 @@ HTTP status code ``304 Not Modified``. A conditional GET or HEAD request has bee
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_USE_PROXY** = ``305``
 
-*Deprecated.* HTTP status code ``305 Use Proxy``.
+**Deprecated:** This constant may be changed or removed in future versions.
+
+HTTP status code ``305 Use Proxy``.
 
 .. _class_HTTPClient_constant_RESPONSE_SWITCH_PROXY:
 
@@ -459,7 +461,9 @@ HTTP status code ``304 Not Modified``. A conditional GET or HEAD request has bee
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_SWITCH_PROXY** = ``306``
 
-*Deprecated.* HTTP status code ``306 Switch Proxy``.
+**Deprecated:** This constant may be changed or removed in future versions.
+
+HTTP status code ``306 Switch Proxy``.
 
 .. _class_HTTPClient_constant_RESPONSE_TEMPORARY_REDIRECT:
 
@@ -890,6 +894,8 @@ Returns the response's body length.
 
 \ **Note:** Some Web servers may not send a body length. In this case, the value returned will be ``-1``. If using chunked transfer encoding, the body length will also be ``-1``.
 
+\ **Note:** This function always returns ``-1`` on the Web platform due to browsers limitations.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1139,3 +1145,4 @@ The proxy server is unset if ``host`` is empty or ``port`` is -1.
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

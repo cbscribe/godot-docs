@@ -92,6 +92,8 @@ Methods
    +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                             | :ref:`ensure_current_is_visible<class_ItemList_method_ensure_current_is_visible>` **(** **)**                                                                                      |
    +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                             | :ref:`force_update_list_size<class_ItemList_method_force_update_list_size>` **(** **)**                                                                                            |
+   +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                            | :ref:`get_item_at_position<class_ItemList_method_get_item_at_position>` **(** :ref:`Vector2<class_Vector2>` position, :ref:`bool<class_bool>` exact=false **)** |const|            |
    +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                        | :ref:`get_item_custom_bg_color<class_ItemList_method_get_item_custom_bg_color>` **(** :ref:`int<class_int>` idx **)** |const|                                                      |
@@ -678,6 +680,18 @@ Ensures there are no items selected.
 void **ensure_current_is_visible** **(** **)**
 
 Ensure current selection is visible, adjusting the scroll position as necessary.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ItemList_method_force_update_list_size:
+
+.. rst-class:: classref-method
+
+void **force_update_list_size** **(** **)**
+
+Forces an update to the list size based on its items. This happens automatically whenever size of the items, or other relevant settings like :ref:`auto_height<class_ItemList_property_auto_height>`, change. The method can be used to trigger the update ahead of next drawing pass.
 
 .. rst-class:: classref-item-separator
 
@@ -1388,3 +1402,4 @@ The background style for the **ItemList**.
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

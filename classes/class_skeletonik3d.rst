@@ -10,6 +10,8 @@
 SkeletonIK3D
 ============
 
+**Deprecated:** This class may be changed or removed in future versions.
+
 **Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 A node used to rotate all bones of a :ref:`Skeleton3D<class_Skeleton3D>` bone chain a way that places the end bone at a desired 3D position.
@@ -40,8 +42,6 @@ SkeletonIK3D is used to rotate all bones of a :ref:`Skeleton3D<class_Skeleton3D>
     
     # Apply zero IK effect (a value at or below 0.01 also removes bones_global_pose_override on Skeleton)
     skeleton_ik_node.set_interpolation(0.0)
-
-\ *Deprecated.* This class is deprecated, and might be removed in a future release.
 
 .. rst-class:: classref-introduction-group
 
@@ -332,3 +332,4 @@ Stops applying IK effects on each frame to the :ref:`Skeleton3D<class_Skeleton3D
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`

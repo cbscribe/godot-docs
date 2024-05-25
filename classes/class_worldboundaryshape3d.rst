@@ -50,8 +50,8 @@ Property Descriptions
 
 .. rst-class:: classref-property-setget
 
-- void **set_plane** **(** :ref:`Plane<class_Plane>` value **)**
-- :ref:`Plane<class_Plane>` **get_plane** **(** **)**
+- |void| **set_plane**\ (\ value\: :ref:`Plane<class_Plane>`\ )
+- :ref:`Plane<class_Plane>` **get_plane**\ (\ )
 
 The :ref:`Plane<class_Plane>` used by the **WorldBoundaryShape3D** for collision.
 
@@ -61,3 +61,5 @@ The :ref:`Plane<class_Plane>` used by the **WorldBoundaryShape3D** for collision
 .. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
 .. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
 .. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`
